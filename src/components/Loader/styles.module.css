@@ -1,0 +1,16 @@
+.wrapper {
+  animation: 1.3s infinite rotate;
+  animation-timing-function: linear;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 195;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.button {
+  height: 35px;
+  width: 150px;
+  border-radius: 8px;
+  color: var(--color-white)
+}
+
+.train {
+  background-color: var(--color-primary);
+}
+
+.reset {
+  background-color: var(--color-primary-light);
+}

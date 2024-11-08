@@ -1,0 +1,102 @@
+html {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  min-width: 1200px;
+  min-height: 800px;
+  overflow: auto;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  overflow: hidden;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  padding: 0px;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+h1, h2 {
+  margin: 0px;
+}
+
+:root {
+  --color-primary: #8F01DE;
+  --color-primary-light: #9E6EFF;
+  --color-primary-dark: #600099;
+  --color-secondary: #3ECDFF;
+  --color-secondary-light: #A4E2F3;
+  --color-secondary-dark: #35AFE0;
+  --color-success: #00FF47;
+  --color-warning: #f39c12;
+  --color-error: #FF0000;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-overlay: #888888AA;
+}
+
+@media screen and (max-width: 425px)  {
+  html {
+    min-width: revert;
+    min-height: revert;
+    width: 100dvw;
+    max-width: 100dvw;
+    height: 100dvh;
+    max-height: 100dvh;
+  }
+}
