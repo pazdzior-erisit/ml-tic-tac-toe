@@ -32,6 +32,18 @@
   height: 35px;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
 .loader {
   width: 100px;
   height: 100px;

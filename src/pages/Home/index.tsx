@@ -7,6 +7,8 @@ import { Player } from '../../helpers/player';
 import workerUrl from '../../helpers/train?worker&url';
 import Controls from '../../components/Controls';
 import Loader from '../../components/Loader';
+import GithubReference from '../../components/GithubReference';
+
 
 type Props = {
   class?: string,
@@ -93,7 +95,10 @@ const Home = (props: Props) => {
           <Loader class={styles.loader}/>
         </div>
       )}
-      <Controls onReset={handleReset} onTrain={handleTrain}/>
+      <div class={styles.header}>
+        <Controls onReset={handleReset} onTrain={handleTrain}/>
+        <GithubReference />
+      </div>
       <div class={styles.result}>
         {!winner && gameState === GAME_STATE_ENUM.FINISHED && (
           <div>Draw</div>

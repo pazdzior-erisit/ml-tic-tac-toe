@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  border: 2px solid var(--color-black);
+  width: fit-content;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 26px;
+  height: 26px;
+}
+
+.link {
+  font-size: 14px;
+  color: var(--color-black);
+}
