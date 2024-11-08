@@ -14,7 +14,7 @@ type Props = {
 
 const Home = (props: Props) => {
   const game = useRef<Game>(new Game());
-  const player = useRef<Player>(new Player(0));
+  const player = useRef<Player>(new Player(0.1));
   const worker = useRef<Worker>();
   const [loading, setLoading] = useState<boolean>();
   const [winner, setWinner] = useState<number>();
@@ -37,7 +37,7 @@ const Home = (props: Props) => {
   }
 
   useEffect(() => {
-    player.current = new Player(0);
+    player.current = new Player(0.1);
     const setupGame = () => {
       game.current = new Game();
       setBoard(game.current.board);

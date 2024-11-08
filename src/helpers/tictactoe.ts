@@ -1,5 +1,3 @@
-type EventType = 'boardupdate' | 'gamestate';
-
 export const GAME_STATE_ENUM = {
   WON: 'WON',
   FINISHED: 'FINISHED',
